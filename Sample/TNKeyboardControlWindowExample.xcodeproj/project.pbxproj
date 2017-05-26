@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38306CA31ED8CECE00E9AF76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38306CA21ED8CECE00E9AF76 /* main.m */; };
+		38306CAD1ED8CEE200E9AF76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38306CA51ED8CEE200E9AF76 /* AppDelegate.m */; };
+		38306CAE1ED8CEE200E9AF76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38306CA61ED8CEE200E9AF76 /* Assets.xcassets */; };
+		38306CB11ED8CEE200E9AF76 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38306CAC1ED8CEE200E9AF76 /* Info.plist */; };
+		38306CB61ED8CFA100E9AF76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38306CB21ED8CFA100E9AF76 /* LaunchScreen.storyboard */; };
+		38306CB71ED8CFA100E9AF76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38306CB41ED8CFA100E9AF76 /* Main.storyboard */; };
+		38306CC91ED8D27600E9AF76 /* TNKeyboardControlWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 38306CC81ED8D27600E9AF76 /* TNKeyboardControlWindow.m */; };
+		38306CD01ED8D91B00E9AF76 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38306CCF1ED8D91B00E9AF76 /* ChatViewController.m */; };
+		38306CD31ED8DBAF00E9AF76 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38306CD21ED8DBAF00E9AF76 /* TabBarController.m */; };
+		38B0448C1ED8EC7E00B9EA94 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B0448B1ED8EC7E00B9EA94 /* LoginViewController.m */; };
+		38B0448F1ED8F36200B9EA94 /* CrazyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B0448E1ED8F36200B9EA94 /* CrazyTabBarController.m */; };
+		38B044921ED8F55400B9EA94 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B044911ED8F55400B9EA94 /* TextFieldViewController.m */; };
+		38B044951ED8F56400B9EA94 /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B044941ED8F56400B9EA94 /* TextViewViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38306C791ED777D400E9AF76 /* TNKeyboardControlWindowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TNKeyboardControlWindowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38306CA21ED8CECE00E9AF76 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TNKeyboardControlWindowExample/main.m; sourceTree = SOURCE_ROOT; };
+		38306CA41ED8CEE200E9AF76 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TNKeyboardControlWindowExample/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		38306CA51ED8CEE200E9AF76 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = TNKeyboardControlWindowExample/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		38306CA61ED8CEE200E9AF76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TNKeyboardControlWindowExample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		38306CAC1ED8CEE200E9AF76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TNKeyboardControlWindowExample/Info.plist; sourceTree = SOURCE_ROOT; };
+		38306CB31ED8CFA100E9AF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TNKeyboardControlWindowExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		38306CB51ED8CFA100E9AF76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TNKeyboardControlWindowExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		38306CC71ED8D27600E9AF76 /* TNKeyboardControlWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNKeyboardControlWindow.h; sourceTree = "<group>"; };
+		38306CC81ED8D27600E9AF76 /* TNKeyboardControlWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNKeyboardControlWindow.m; sourceTree = "<group>"; };
+		38306CCE1ED8D91B00E9AF76 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = TNKeyboardControlWindowExample/ChatViewController.h; sourceTree = SOURCE_ROOT; };
+		38306CCF1ED8D91B00E9AF76 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = TNKeyboardControlWindowExample/ChatViewController.m; sourceTree = SOURCE_ROOT; };
+		38306CD11ED8DBAF00E9AF76 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = TNKeyboardControlWindowExample/TabBarController.h; sourceTree = SOURCE_ROOT; };
+		38306CD21ED8DBAF00E9AF76 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = TNKeyboardControlWindowExample/TabBarController.m; sourceTree = SOURCE_ROOT; };
+		38B0448A1ED8EC7E00B9EA94 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = TNKeyboardControlWindowExample/LoginViewController.h; sourceTree = SOURCE_ROOT; };
+		38B0448B1ED8EC7E00B9EA94 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = TNKeyboardControlWindowExample/LoginViewController.m; sourceTree = SOURCE_ROOT; };
+		38B0448D1ED8F36200B9EA94 /* CrazyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrazyTabBarController.h; path = TNKeyboardControlWindowExample/CrazyTabBarController.h; sourceTree = SOURCE_ROOT; };
+		38B0448E1ED8F36200B9EA94 /* CrazyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CrazyTabBarController.m; path = TNKeyboardControlWindowExample/CrazyTabBarController.m; sourceTree = SOURCE_ROOT; };
+		38B044901ED8F55400B9EA94 /* TextFieldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextFieldViewController.h; path = TNKeyboardControlWindowExample/TextFieldViewController.h; sourceTree = SOURCE_ROOT; };
+		38B044911ED8F55400B9EA94 /* TextFieldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextFieldViewController.m; path = TNKeyboardControlWindowExample/TextFieldViewController.m; sourceTree = SOURCE_ROOT; };
+		38B044931ED8F56400B9EA94 /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextViewViewController.h; path = TNKeyboardControlWindowExample/TextViewViewController.h; sourceTree = SOURCE_ROOT; };
+		38B044941ED8F56400B9EA94 /* TextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextViewViewController.m; path = TNKeyboardControlWindowExample/TextViewViewController.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38306C761ED777D400E9AF76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38306C701ED777D400E9AF76 = {
+			isa = PBXGroup;
+			children = (
+				38306C7B1ED777D400E9AF76 /* TNKeyboardControlWindowExample */,
+				38306C7A1ED777D400E9AF76 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		38306C7A1ED777D400E9AF76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				38306C791ED777D400E9AF76 /* TNKeyboardControlWindowExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38306C7B1ED777D400E9AF76 /* TNKeyboardControlWindowExample */ = {
+			isa = PBXGroup;
+			children = (
+				38306CBF1ED8D1E200E9AF76 /* TNKeyboardControlWindow */,
+				38306CA41ED8CEE200E9AF76 /* AppDelegate.h */,
+				38306CA51ED8CEE200E9AF76 /* AppDelegate.m */,
+				38306CD11ED8DBAF00E9AF76 /* TabBarController.h */,
+				38306CD21ED8DBAF00E9AF76 /* TabBarController.m */,
+				38B0448D1ED8F36200B9EA94 /* CrazyTabBarController.h */,
+				38B0448E1ED8F36200B9EA94 /* CrazyTabBarController.m */,
+				38306CCE1ED8D91B00E9AF76 /* ChatViewController.h */,
+				38306CCF1ED8D91B00E9AF76 /* ChatViewController.m */,
+				38B0448A1ED8EC7E00B9EA94 /* LoginViewController.h */,
+				38B0448B1ED8EC7E00B9EA94 /* LoginViewController.m */,
+				38B044901ED8F55400B9EA94 /* TextFieldViewController.h */,
+				38B044911ED8F55400B9EA94 /* TextFieldViewController.m */,
+				38B044931ED8F56400B9EA94 /* TextViewViewController.h */,
+				38B044941ED8F56400B9EA94 /* TextViewViewController.m */,
+				38306CA61ED8CEE200E9AF76 /* Assets.xcassets */,
+				38306CB41ED8CFA100E9AF76 /* Main.storyboard */,
+				38306CB21ED8CFA100E9AF76 /* LaunchScreen.storyboard */,
+				38306C7C1ED777D400E9AF76 /* Supporting Files */,
+			);
+			name = TNKeyboardControlWindowExample;
+			path = TestTable;
+			sourceTree = "<group>";
+		};
+		38306C7C1ED777D400E9AF76 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				38306CA21ED8CECE00E9AF76 /* main.m */,
+				38306CAC1ED8CEE200E9AF76 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38306CBF1ED8D1E200E9AF76 /* TNKeyboardControlWindow */ = {
+			isa = PBXGroup;
+			children = (
+				38306CC71ED8D27600E9AF76 /* TNKeyboardControlWindow.h */,
+				38306CC81ED8D27600E9AF76 /* TNKeyboardControlWindow.m */,
+			);
+			name = TNKeyboardControlWindow;
+			path = ../Pod;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38306C781ED777D400E9AF76 /* TNKeyboardControlWindowExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38306C901ED777D400E9AF76 /* Build configuration list for PBXNativeTarget "TNKeyboardControlWindowExample" */;
+			buildPhases = (
+				38306C751ED777D400E9AF76 /* Sources */,
+				38306C761ED777D400E9AF76 /* Frameworks */,
+				38306C771ED777D400E9AF76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TNKeyboardControlWindowExample;
+			productName = TestTable;
+			productReference = 38306C791ED777D400E9AF76 /* TNKeyboardControlWindowExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		38306C711ED777D400E9AF76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Tawa Nicolas";
+				TargetAttributes = {
+					38306C781ED777D400E9AF76 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = DWW2N9PN49;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 38306C741ED777D400E9AF76 /* Build configuration list for PBXProject "TNKeyboardControlWindowExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 38306C701ED777D400E9AF76;
+			productRefGroup = 38306C7A1ED777D400E9AF76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				38306C781ED777D400E9AF76 /* TNKeyboardControlWindowExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		38306C771ED777D400E9AF76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38306CB61ED8CFA100E9AF76 /* LaunchScreen.storyboard in Resources */,
+				38306CB11ED8CEE200E9AF76 /* Info.plist in Resources */,
+				38306CAE1ED8CEE200E9AF76 /* Assets.xcassets in Resources */,
+				38306CB71ED8CFA100E9AF76 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		38306C751ED777D400E9AF76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38306CAD1ED8CEE200E9AF76 /* AppDelegate.m in Sources */,
+				38B044951ED8F56400B9EA94 /* TextViewViewController.m in Sources */,
+				38B0448F1ED8F36200B9EA94 /* CrazyTabBarController.m in Sources */,
+				38306CA31ED8CECE00E9AF76 /* main.m in Sources */,
+				38B0448C1ED8EC7E00B9EA94 /* LoginViewController.m in Sources */,
+				38B044921ED8F55400B9EA94 /* TextFieldViewController.m in Sources */,
+				38306CD31ED8DBAF00E9AF76 /* TabBarController.m in Sources */,
+				38306CD01ED8D91B00E9AF76 /* ChatViewController.m in Sources */,
+				38306CC91ED8D27600E9AF76 /* TNKeyboardControlWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		38306CB21ED8CFA100E9AF76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38306CB31ED8CFA100E9AF76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		38306CB41ED8CFA100E9AF76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38306CB51ED8CFA100E9AF76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		38306C8E1ED777D400E9AF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		38306C8F1ED777D400E9AF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		38306C911ED777D400E9AF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DWW2N9PN49;
+				INFOPLIST_FILE = "$(SRCROOT)/TNKeyboardControlWindowExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tawanicolas.keyboardControlWindowExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		38306C921ED777D400E9AF76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DWW2N9PN49;
+				INFOPLIST_FILE = "$(SRCROOT)/TNKeyboardControlWindowExample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tawanicolas.keyboardControlWindowExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38306C741ED777D400E9AF76 /* Build configuration list for PBXProject "TNKeyboardControlWindowExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38306C8E1ED777D400E9AF76 /* Debug */,
+				38306C8F1ED777D400E9AF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		38306C901ED777D400E9AF76 /* Build configuration list for PBXNativeTarget "TNKeyboardControlWindowExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38306C911ED777D400E9AF76 /* Debug */,
+				38306C921ED777D400E9AF76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 38306C711ED777D400E9AF76 /* Project object */;
+}
