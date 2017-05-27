@@ -46,7 +46,7 @@ You would also need to add your View Controller as a listener to the window by c
 ```
 > Ideally inside your `-(void)viewDidAppear:(BOOL)animated`. 
 
-You also need to remove your View Controller by calling 
+You also need to remove your View Controller when it's no longer displayed by calling 
 ```objective-c
 [[TNKeyboardControlWindow window] removeKeyboardFrameListener:self];
 ```
