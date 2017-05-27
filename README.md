@@ -39,13 +39,13 @@ In order to do that, implement `<TNKeyboardListenerProtocol>` in your View Contr
 
 You would also need to add your View Controller as a listener to the window by calling 
 ```objective-c
-	[[TNKeyboardControlWindow window] addKeyboardFrameListener:self];
+[[TNKeyboardControlWindow window] addKeyboardFrameListener:self];
 ```
 > Ideally inside your `-(void)viewDidAppear:(BOOL)animated`. 
 
 You also need to remove your View Controller by calling 
 ```objective-c
-	[[TNKeyboardControlWindow window] removeKeyboardFrameListener:self];
+[[TNKeyboardControlWindow window] removeKeyboardFrameListener:self];
 ```
 
 And that's it!
