@@ -63,7 +63,7 @@ You would also need to add your View Controller as a listener to the window by c
 ```
 #### Swift
 ```swift
-TNKeyboardControlWindow().addKeyboardFrameListener(self)
+TNKeyboardControlWindow.window.addKeyboardFrameListener(self)
 ```
 > Ideally inside your `viewDidAppear`. 
 
@@ -74,7 +74,7 @@ You also need to remove your View Controller when it's no longer displayed by ca
 ```
 #### Swift
 ```swift
-TNKeyboardControlWindow().removeKeyboardFrameListener(self)
+TNKeyboardControlWindow.window.removeKeyboardFrameListener(self)
 ```
 
 And that's it!
