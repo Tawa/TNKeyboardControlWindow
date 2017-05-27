@@ -32,8 +32,11 @@ return [TNKeyboardControlWindow window];
 ### Handling UI
 In most of the View Contorllers in your app, you need to update the UI Layout to accomodate to the keyboard displaying on the screen.
 In order to do that, implement `<TNKeyboardListenerProtocol>` in your View Controller and add the method `-(void)keyboardDidChangeFrame:(CGRect)frame`.
-You would also need to add your View Controller as a listener to the window by calling `[[TNKeyboardControlWindow window] addKeyboardFrameListener:self];` ideally inside your `-(void)viewDidAppear:(BOOL)animated`.
-You also need to remove your View Controller by calling `[[TNKeyboardControlWindow window] removeKeyboardFrameListener:self];`
+You would also need to add your View Controller as a listener to the window by calling 
+`[[TNKeyboardControlWindow window] addKeyboardFrameListener:self];`
+ideally inside your `-(void)viewDidAppear:(BOOL)animated`.
+You also need to remove your View Controller by calling 
+`[[TNKeyboardControlWindow window] removeKeyboardFrameListener:self];`
 
 And that's it!
 
