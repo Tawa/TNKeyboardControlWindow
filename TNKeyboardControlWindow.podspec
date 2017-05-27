@@ -19,6 +19,8 @@ Pod::Spec.new do |s|
 	s.source			= { :git => 'https://github.com/Tawa/TNKeyboardControlWindow', :tag => s.version.to_s }
 	s.social_media_url	= 'https://twitter.com/TawaNicolas'
 
+	s.ios.deployment_target = '8.0'
+
 	s.subspec 'TNKeyboardControlWindow' do |ss|
 		ss.source_files = 'TNKeyboardControlWindow'
 	end
