@@ -117,7 +117,7 @@
 				38306CC81ED8D27600E9AF76 /* TNKeyboardControlWindow.m */,
 			);
 			name = TNKeyboardControlWindow;
-			path = ../Pod;
+			path = ../TNKeyboardControlWindow;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
