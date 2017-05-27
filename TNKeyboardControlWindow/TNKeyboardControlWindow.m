@@ -94,7 +94,7 @@ NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 	self.keyboardView = nil;
 }
 
-+(instancetype)window
++(TNKeyboardControlWindow *)window
 {
 	static TNKeyboardControlWindow *w = nil;
 	
