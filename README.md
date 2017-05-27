@@ -4,6 +4,9 @@
 ## Summary
 TNKeyboardControlWindow is a small utility that helps you integrate keyboard pan-to-dismiss functionality.
 
+![](https://thumbs.gfycat.com/ImpossibleTestyIndianpalmsquirrel-size_restricted.gif)
+![](https://thumbs.gfycat.com/EvilMiserableGrayreefshark-size_restricted.gif)
+
 ## Installation
 
 #### Manual install
