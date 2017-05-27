@@ -220,9 +220,4 @@ NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 	[[NSNotificationCenter defaultCenter] postNotificationName:TNKeyboardFrameChangeNotification object:nil userInfo:@{TNKeyboardFrameUserInfoKey:[NSValue valueWithCGRect:frame]}];
 }
 
--(void)printWindow
-{
-	NSLog(@"Print Window: %@", self);
-}
-
 @end
