@@ -33,11 +33,6 @@ NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 
 @implementation TNKeyboardControlWindow
 
--(instancetype)init
-{
-	return [[self class] window];
-}
-
 -(instancetype)initWithFrame:(CGRect)frame
 {
 	self = [super initWithFrame:frame];
