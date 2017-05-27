@@ -4,7 +4,7 @@
 ## Summary
 TNKeyboardControlWindow is a small utility that helps you integrate keyboard pan-to-dismiss functionality.
 
-### Installation
+## Installation
 
 #### Manual install
 Download the folder 'TNKeyboardControlWindow' and add the files to your project.
@@ -15,7 +15,7 @@ Add the following line to your Podfile
 pod 'TNKeyboardControlWindow'
 ```
 
-### Integration
+## Integration
 In order to handle the keyboard panning accross the whole app, you need to handle it on the UIWindow level.
 TNKeyboardControlWindow does that for you.
 You need to `#import <TNKeyboardControlWindow.h>` in your AppDelegate, and add the following function to the AppDelegate:
@@ -29,7 +29,7 @@ return [TNKeyboardControlWindow window];
 
 > In case you have your own custom UIWindow class and you still need to implement this, you can simply subclass TNKeyboardControlWindow instead of UIWindow.
 
-#### Handling UI
+### Handling UI
 In most of the View Contorllers in your app, you need to update the UI Layout to accomodate to the keyboard displaying on the screen.
 In order to do that, implement `<TNKeyboardListenerProtocol>` in your View Controller and add the method `-(void)keyboardDidChangeFrame:(CGRect)frame`.
 You would also need to add your View Controller as a listener to the window by calling `[[TNKeyboardControlWindow window] addKeyboardFrameListener:self];` ideally inside your `-(void)viewDidAppear:(BOOL)animated`.
@@ -39,6 +39,6 @@ And that's it!
 
 A sample project is included with different ViewControllers and different UI components that update with the keyboard.
 
-### Notes
+## Notes
 
 Feel free to use 'TNKeyboardControlWindow' in any way you like. An attribution is not required, but is highly appreciated.
