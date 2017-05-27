@@ -19,7 +19,7 @@ extern NSString *const TNKeyboardFrameUserInfoKey;
 
 @interface TNKeyboardControlWindow : UIWindow
 
-+(TNKeyboardControlWindow *)window;
++(instancetype)window;
 
 -(void)addKeyboardFrameListener:(id<TNKeyboardListenerProtocol>)listener;
 -(void)removeKeyboardFrameListener:(id<TNKeyboardListenerProtocol>)listener;
