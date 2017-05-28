@@ -53,6 +53,8 @@ NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidHide:) name:UIKeyboardDidHideNotification object:nil];
+
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardChangeFrame:) name:UIKeyboardDidChangeFrameNotification object:nil];
 	}
 	
 	return self;
@@ -154,6 +156,17 @@ NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 			[listener keyboardDidFinishHiding];
 		}
 	}
+}
+
+-(void)keyboardChangeFrame:(NSNotification *)notification
+{
+	for (UIWindow *window in [UIApplication sharedApplication].windows) {
+		if ([window isKindOfClass:NSClassFromString(@"UIRemoteKeyboardWindow")]) {
+			self.keyboardWindow = window;
+			self.keyboardView = window.rootViewController.view.subviews.firstObject;
+			keyboardFrame = self.keyboardView.frame;
+		}
+	}	
 }
 
 // Shared instance

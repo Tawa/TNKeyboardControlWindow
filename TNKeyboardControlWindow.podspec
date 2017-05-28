@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 	s.name				= 'TNKeyboardControlWindow'
-	s.version			= '1.0.6'
+	s.version			= '1.0.7'
 	s.summary			= 'Keyboard pan-to-dismiss functionality for iOS!'
 
 	s.description		= "The tiny utility helps you implement an app-wide keyboard pan-to-dismiss functionality in just a few lines of code."
