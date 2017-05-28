@@ -9,6 +9,13 @@
 
 @protocol TNKeyboardListenerProtocol <NSObject>
 
+@optional
+-(void)keyboardWillStartShowing;
+-(void)keyboardDidFinishShowing;
+
+-(void)keyboardWillStartHiding;
+-(void)keyboardDidFinishHiding;
+
 @required
 -(void)keyboardDidChangeFrame:(CGRect)frame;
 

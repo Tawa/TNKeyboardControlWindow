@@ -12,7 +12,8 @@
 
 @interface ChatViewController () <TNKeyboardListenerProtocol, UITableViewDelegate, UITableViewDataSource>
 {
-	CGFloat previousKeyboardY;
+	CGPoint initialContentOffset;
+	BOOL initialContentOffsetValid;
 	
 	NSMutableArray <NSString *> *messages;
 }
@@ -28,10 +29,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	previousKeyboardY = ((TabBarController *)self.tabBarController).tabBarY;
+	initialContentOffset = CGPointZero;
+	initialContentOffsetValid = NO;
 	
 	messages = [NSMutableArray array];
-	for (int i = 1; i < 10; i++) {
+	for (int i = 1; i < 100; i++) {
 		[messages addObject:[NSString stringWithFormat:@"Message %d", i]];
 	}
 }
@@ -69,6 +71,17 @@
 
 #pragma mark - TNKeyboardListenerProtocol method
 
+-(void)keyboardWillStartShowing
+{
+	initialContentOffset = self.tableView.contentOffset;
+	initialContentOffsetValid = YES;
+}
+
+-(void)keyboardDidFinishShowing
+{
+	initialContentOffsetValid = NO;
+}
+
 -(void)keyboardDidChangeFrame:(CGRect)frame
 {
 	CGFloat y = frame.origin.y;
@@ -76,14 +89,17 @@
 	
 	if (y < tabBarY) {
 		self.bottomConstraint.constant = tabBarY-y;
-
-		CGFloat deltaY = y - previousKeyboardY;
-		CGPoint offset = self.tableView.contentOffset;
-		offset.y -= deltaY;
-		[self.tableView setContentOffset:offset animated:NO];
-		previousKeyboardY = y;
 	} else {
 		self.bottomConstraint.constant = 0;
+	}
+	
+	if (initialContentOffsetValid) {
+		if (y < tabBarY) {
+			CGFloat offsetY = (tabBarY - y);
+			CGPoint offset = CGPointMake(initialContentOffset.x, initialContentOffset.y + offsetY);
+			self.tableView.contentOffset = offset;
+		} else {
+		}
 	}
 }
 
