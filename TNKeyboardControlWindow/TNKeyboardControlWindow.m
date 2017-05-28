@@ -158,6 +158,12 @@ NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 	}
 }
 
+/**
+ Keyboard did change frame, reset the view.
+ This is in case the keyboard changed from regular to numpad ro anything else.
+
+ @param notification - NSNotification sent by the OS.
+ */
 -(void)keyboardChangeFrame:(NSNotification *)notification
 {
 	for (UIWindow *window in [UIApplication sharedApplication].windows) {
