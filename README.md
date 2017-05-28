@@ -77,6 +77,25 @@ You also need to remove your View Controller when it's no longer displayed by ca
 TNKeyboardControlWindow.window.removeKeyboardFrameListener(self)
 ```
 
+### Optional listener methods
+The listener protocol has 4 optional methods that can be implemented in order to avoid having to use NSNotificationCenter to monitor keyboard activity
+#### Objective-C
+```objective-c
+-(void)keyboardWillStartShowing;
+-(void)keyboardDidFinishShowing;
+
+-(void)keyboardWillStartHiding;
+-(void)keyboardDidFinishHiding;
+```
+#### Swift
+```swift
+public func keyboardWillStartShowing()
+public func keyboardDidFinishShowing()
+
+public func keyboardWillStartHiding()
+public func keyboardDidFinishHiding()
+```
+
 And that's it!
 
 A sample project is included with different ViewControllers and different UI components that update with the keyboard.
