@@ -10,11 +10,13 @@
 NSString *const TNKeyboardFrameChangeNotification	= @"TNKeyboardFrameChangeNotification";
 NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 
+// Use a macro for screen size. Smaller code, and updates with screen orientation changes
+#define screenSize [[UIScreen mainScreen] bounds].size
+
 @interface TNKeyboardControlWindow ()
 {
 	NSMutableArray *listeners;				// Array of listeners that are gonna be waiting for keyboard events
 	CGRect keyboardFrame;					// Keyboard Frame on screen
-	CGSize screenSize;						// Screen size
 	
 	NSTimeInterval lastTouchTimestamp;		// Previous touch timestamp. Used to calculate touch drag speed
 	CGFloat lastTouchY;						// Previous touch y position on the screen. Used to calculate touch drag speed
@@ -41,7 +43,6 @@ NSString *const TNKeyboardFrameUserInfoKey			= @"TNKeyboardFrameUserInfoKey";
 		[self becomeFirstResponder];
 		
 		listeners = [NSMutableArray array];
-		screenSize = [[UIScreen mainScreen] bounds].size;
 		keyboardFrame = CGRectZero;
 
 		displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(checkKeyboard)];
